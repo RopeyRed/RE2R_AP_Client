@@ -1,0 +1,311 @@
+[
+	{
+		"name": "Scrap of Paper",
+		"region": "Break Room Hallway",
+		"item object": "File11_2ndPlayUnicornHint",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_312_0/gimmick"
+	},
+	{
+		"name": "Notebook with Missing Page",
+		"region": "Main Hall 1F",
+		"item object": "File12_2ndPlayVirgineHint",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_101_0/gimmick"
+	},
+	{
+		"name": "Guide Pamphlet",
+		"region": "Waiting Room",
+		"item object": "File06_racoon guide",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_501_0/gimmick"
+	},
+	{
+		"name": "Record of Events",
+		"region": "Operations Room",
+		"item object": "File01_sakusenHoukokusyo",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_206_0/gimmick"
+	},
+	{
+		"name": "Police Station 1F Map",
+		"region": "Operations Room",
+		"item object": "SetEv_GetMap_v2_sm74_100",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/1F/1FW/MissionRoom"
+	},
+	{
+		"name": "Uses of Gunpowder",
+		"region": "West Office",
+		"item object": "File28_gunpowder hint LEON",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_208_0/gimmick_leon"
+	},
+	{
+		"name": "Rookie's First Assignment",
+		"region": "West Office",
+		"item object": "File62_youkoso reon",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_208_0/gimmick"
+	},
+	{
+		"name": "Operation Report",
+		"region": "West Office",
+		"item object": "File25_SakusenHoukokusyo",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_208_0/gimmick"
+	},
+	{
+		"name": "Storage Locker Terminal Memo",
+		"region": "Safety Deposit Room",
+		"item object": "File65_Hokanko setumei",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_207_0/gimmick"
+	},
+	{
+		"name": "Portable Safe Instructions",
+		"region": "Shower Room",
+		"item object": "File63_PortableSafeManual",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_403_0/gimmick"
+	},
+	{
+		"name": "Medicinal Benefits of Herbs",
+		"region": "Darkroom",
+		"item object": "File54_syokubutugaku",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_209_0/gimmick"
+	},
+	{
+		"name": "To any survivors",
+		"region": "West Hallway 3F",
+		"item object": "File02_rikka- ni tuite",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_603_0/gimmick"
+	},
+	{
+		"name": "Some Guy's Scribblings",
+		"region": "West Storage Room",
+		"item object": "File14_shinkan iruyo",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_604_0/gimmick"
+	},
+	{
+		"name": "Police Station Upper Floors Map",
+		"region": "Library",
+		"item object": "SetEv_GetMap_v2_sm74_110",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FW/reception2F/PoliceMap2"
+	},
+	{
+		"name": "Repair Plan",
+		"region": "Clock Tower",
+		"item object": "File66_ClockTower ni tuite",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_602_0/gimmick"
+	},
+	{
+		"name": "Police Station B1 Map",
+		"region": "Jail",
+		"item object": "SetEv_GetMap_v2_sm74_101_B1F",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/LocationFsm_RPD_B1/S02_0500/Leon_S02_0500/AREA_Prison"
+	},
+	{
+		"name": "Memo: 'Jail Power Panel'",
+		"region": "Jail",
+		"item object": "SetFile2_file15_Hint2Switch",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD_B1/Environments/st4_714_0/gimmick"
+	},
+	{
+		"name": "Equipment Disposal Notice",
+		"region": "Firing Range",
+		"item object": "SetFile2_file30_CarKeyHint",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD_B1/Environments/st4_704_0/gimmick"
+	},
+	{
+		"name": "A Message From Mr. Raccoon",
+		"region": "Firing Range",
+		"item object": "SetFile2_file04_HintEasterEgg",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD_B1/Environments/st4_704_0/gimmick"
+	},
+	{
+		"name": "Autopsy Record No. 53477",
+		"region": "Morgue",
+		"item object": "SetFile2_file18_DaiaKey",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD_B1/Environments/st4_702_0/gimmick"
+	},
+	{
+		"name": "Ben's Memo",
+		"region": "Jail",
+		"item object": "SetFile2_file67_TyrantReport",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD_B1/Environments/st4_714_0/gimmick"
+	},
+	{
+	
+		"name": "Letter to the Shopkeeper",
+		"region": "RPD Streets",
+		"item object": "AdditionalFile_TU5",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_OrphanApproach/Environments/st1_630_0/gimmick"
+	},
+	{
+		"name": "Copy of Emails to Umbrella HQ",
+		"region": "Control Room",
+		"item object": "SetFile2_file88_MAIL",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_630_0/gimmick"
+	},
+	{
+		"name": "Sewers Map",
+		"region": "Monitor Room",
+		"item object": "SetEv_GetMap_v2_sm74_103_WW",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Get_WW_Map"
+	},
+	{
+		"name": "Sewers Map",
+		"region": "Monitor Room",
+		"item object": "SetEv_GetMap_v2_sm74_103_WW",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Get_WW_Map"
+	},
+	{
+		"name": "Sewers Company Pamphlet",
+		"region": "Monitor Room",
+		"item object": "SetFile2_file26_Panfret",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
+	},
+	{
+		"name": "Claire's Note",
+		"region": "Treatment Pool Room",
+		"item object": "SetFile2_file69_Leon2ndScenario",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_630_0/gimmick_leon"
+	},
+	{
+		"name": "Claire's Note",
+		"region": "Treatment Pool Room",
+		"item object": "SetFile2_file69_Leon2ndScenario",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_630_0/gimmick_leon"
+	},
+	{
+		"name": "Delivery Receipt",
+		"region": "Treatment Pool Room",
+		"item object": "SetFile2_file44_kinko842",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_630_0/gimmick"
+	},
+	{
+		"name": "Internal Memo",
+		"region": "STARS Office",
+		"item object": "File51_kinko numberB",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_404_0/gimmick"
+	},
+	{
+		"name": "Claire's Memo",
+		"region": "STARS Office",
+		"item object": "File68_2ndPlayKakioki_Leon",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_404_0/gimmick"
+	},
+	{
+		"name": "Art Article: 'The Red Stone'",
+		"region": "Art Room",
+		"item object": "File05_arken collection",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_503_0/gimmick"
+	},
+	{
+		"name": "Confiscation Report",
+		"region": "Observation Room",
+		"item object": "File50_kinkoNumber",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_308_0/gimmick"
+	},
+	{
+		"name": "Letter to STARS Members",
+		"region": "STARS Office",
+		"item object": "File03_Chris no kakioki",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_404_0/gimmick"
+	},
+	{
+		"name": "Unlocking the U-Area Door",
+		"region": "Monitor Room",
+		"item object": "SetFile2_file27_G2Door",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
+	},
+	{
+		"name": "Nap Room Log",
+		"region": "Reception",
+		"item object": "file34_kaminsitu",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_102_0/gimmick"
+	},
+	{
+		"name": "Research Lab North Area Map",
+		"region": "Security Room",
+		"item object": "SetEv_GetMap_v2_sm74_106_LAB",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/StartArea/SherryRoom/Get_LAB_Map"
+	},
+	{
+		"name": "Wayne Li's Note",
+		"region": "Nap Room",
+		"item object": "SetFile2_file41_Lee no syuki",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_106_0/gimmick"
+	},
+	{
+		"name": "Special Forces Recording",
+		"region": "Main Shaft",
+		"item object": "SetFile2_file36_about G and AntiVirus",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_111_0/gimmick"
+	},
+	{
+		"name": "Herbicide Synthesis",
+		"region": "Drug Testing Lab",
+		"item object": "SetFile2_file39_aboutHiryou",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_124_0/gimmick"
+	},
+	{
+		"name": "Research Lab East Area Map",
+		"region": "Lounge - Labs",
+		"item object": "SetEv_GetMap_v2_sm74_107_LAB_T",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/T_Area/UnderCollidor"
+	},
+	{
+		"name": "Somebody's Note",
+		"region": "Lobby Storage",
+		"item object": "file37_aboutPlant43",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_125_0/gimmick"
+	},
+	{
+		"name": "William Birkin's Inbox",
+		"region": "Biotesting Lab",
+		"item object": "SetFile2_file42_G houkokusyo1",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_131_0/gimmick"
+	},
+	{
+		"name": "Research Diary",
+		"region": "P-4 Level Testing Lab",
+		"item object": "SetFile2_file42_G houkokusyo1",
+		"parent object": "",
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_134_0/gimmick"
+	},
+]
