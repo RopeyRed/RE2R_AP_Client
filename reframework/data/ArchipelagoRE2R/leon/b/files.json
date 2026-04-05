@@ -92,7 +92,7 @@
 	},
 	{
 		"name": "Police Station Upper Floors Map",
-		"region": "Library",
+		"region": "Lounge - RPD",
 		"item object": "SetEv_GetMap_v2_sm74_110",
 		"parent object": "",
 		"folder path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/2F/2FW/reception2F/PoliceMap2"
@@ -147,7 +147,6 @@
 		"folder path": "RopewayContents/World/Location_RPD_B1/Environments/st4_714_0/gimmick"
 	},
 	{
-	
 		"name": "Letter to the Shopkeeper",
 		"region": "RPD Streets",
 		"item object": "AdditionalFile_TU5",
@@ -169,25 +168,11 @@
 		"folder path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Get_WW_Map"
 	},
 	{
-		"name": "Sewers Map",
-		"region": "Monitor Room",
-		"item object": "SetEv_GetMap_v2_sm74_103_WW",
-		"parent object": "",
-		"folder path": "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/Item/common/Get_WW_Map"
-	},
-	{
 		"name": "Sewers Company Pamphlet",
 		"region": "Monitor Room",
 		"item object": "SetFile2_file26_Panfret",
 		"parent object": "",
 		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_632_0/gimmick"
-	},
-	{
-		"name": "Claire's Note",
-		"region": "Treatment Pool Room",
-		"item object": "SetFile2_file69_Leon2ndScenario",
-		"parent object": "",
-		"folder path": "RopewayContents/World/Location_WasteWater/Environments/st3_630_0/gimmick_leon"
 	},
 	{
 		"name": "Claire's Note",
@@ -233,7 +218,7 @@
 	},
 	{
 		"name": "Letter to STARS Members",
-		"region": "STARS Office",
+		"region": "Armory",
 		"item object": "File03_Chris no kakioki",
 		"parent object": "",
 		"folder path": "RopewayContents/World/Location_RPD/Environments/st4_404_0/gimmick"
@@ -247,7 +232,7 @@
 	},
 	{
 		"name": "Nap Room Log",
-		"region": "Reception",
+		"region": "Reception - Labs",
 		"item object": "file34_kaminsitu",
 		"parent object": "",
 		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_102_0/gimmick"
@@ -264,7 +249,10 @@
 		"region": "Nap Room",
 		"item object": "SetFile2_file41_Lee no syuki",
 		"parent object": "",
-		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_106_0/gimmick"
+		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_106_0/gimmick",
+        "condition": {
+            "items": ["Signal Modulator"]
+        }
 	},
 	{
 		"name": "Special Forces Recording",
@@ -307,5 +295,5 @@
 		"item object": "SetFile2_file42_G houkokusyo1",
 		"parent object": "",
 		"folder path": "RopewayContents/World/Location_Laboratory/Environments/st5_134_0/gimmick"
-	},
+	}
 ]
