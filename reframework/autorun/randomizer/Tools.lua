@@ -4,6 +4,10 @@ function Tools.ShowGUI()
     local scenario_text = '(not connected)'
     local deathlink_text = '(not connected)'
     local deathlink_color = AP_REF.HexToImguiColor('FFFFFF')
+    local enemy_kills_text = '   (not connected)'
+    local enemy_kills_color = AP_REF.HexToImguiColor('FFFFFF')
+    local enemy_behavior_text = '   (not connected)'
+    local enemy_behavior_color = AP_REF.HexToImguiColor('FFFFFF')
     local version_text = tostring(Manifest.version)
     local version_mismatch = false
 
@@ -17,6 +21,22 @@ function Tools.ShowGUI()
         else
             deathlink_text = "Off"
             deathlink_color = AP_REF.HexToImguiColor('777777')
+        end
+
+        if Archipelago.enemy_behavior and Archipelago.enemy_behavior ~= "Off" then
+            enemy_behavior_text = "   " .. tostring(Archipelago.enemy_behavior)
+            enemy_behavior_color = AP_REF.HexToImguiColor('FFFFFF')
+        else
+            enemy_behavior_text = "Off"
+            enemy_behavior_color = AP_REF.HexToImguiColor('777777')
+        end
+
+        if Archipelago.enemy_kills and tostring(Archipelago.enemy_kills) ~= "None" and tostring(Archipelago.enemy_kills) ~= "Off" then
+            enemy_kills_text = "   " .. tostring(Archipelago.enemy_kills)
+            enemy_kills_color = AP_REF.HexToImguiColor('FFFFFF')
+        else
+            enemy_kills_text = "Off"
+            enemy_kills_color = AP_REF.HexToImguiColor('777777')
         end
 
         if Archipelago.apworld_version == nil or Archipelago.apworld_version ~= Manifest.version then
@@ -85,6 +105,14 @@ function Tools.ShowGUI()
             end
         end
     end
+    
+    imgui.text_colored(" Enemy Behavior: ", -10825765)
+    imgui.same_line()
+    imgui.text_colored("              " .. enemy_behavior_text, enemy_behavior_color)
+
+    imgui.text_colored(" Enemy Kills: ", -10825765)
+    imgui.same_line()
+    imgui.text_colored("                   " .. enemy_kills_text, enemy_kills_color)
 
     imgui.new_line()
 

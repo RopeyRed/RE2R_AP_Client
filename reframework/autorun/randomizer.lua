@@ -18,6 +18,7 @@ Archipelago = require("randomizer/Archipelago")
 CutsceneObjects = require("randomizer/CutsceneObjects")
 DestroyObjects = require("randomizer/DestroyObjects")
 Enemy = require("randomizer/Enemy")
+EnemyBehavior = require("randomizer/EnemyBehavior")
 GUI = require("randomizer/GUI")
 GUIInventory = require("randomizer/GUIInventory")
 GUISave = require("randomizer/GUISave")
@@ -60,7 +61,7 @@ re.on_pre_application_entry("UpdateBehavior", function()
         CutsceneObjects.Init()
         DestroyObjects.Init()
         SaveData.Init()
-        StartingWeapon.Init()
+        EnemyBehavior.Init()
         GUIInventory.Init()
         ItemDuplicates.Init()
 
@@ -93,6 +94,13 @@ re.on_pre_application_entry("UpdateBehavior", function()
         CutsceneObjects.isInit = false -- look for objects that should be destroyed and destroy them again
         DestroyObjects.isInit = false -- look for objects that should be destroyed and destroy them again
         ItemDuplicates.isInit = false -- look for duplicate items that should be removed and remove them again
+        EnemyBehavior.isInit = false
+        EnemyBehavior.safeRoomIds = nil
+        EnemyBehavior.persistentColliderObject = nil
+        EnemyBehavior.pendingActions = {}
+        EnemyBehavior.currentSceneAddress = nil
+        EnemyBehavior.nemesisZonesDisabledUntil = nil
+        EnemyBehavior.disabledNemesisZones = nil
     end
 
     if Scene:isGameOver() then

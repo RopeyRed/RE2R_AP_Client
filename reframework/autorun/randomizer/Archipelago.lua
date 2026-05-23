@@ -9,6 +9,7 @@ Archipelago.ammo_pack_modifier = nil -- comes over in slot data
 Archipelago.ammo_pack_type_amount = {} -- used if pack modifier is "random by type"
 Archipelago.damage_traps_can_kill = false -- comes over in slot data
 Archipelago.death_link = false -- comes over in slot data
+Archipelago.enemy_behavior = false -- comes over in slot data
 Archipelago.hasConnectedPrior = false -- keeps track of whether the player has connected at all so players don't have to remove AP mod to play vanilla
 Archipelago.isInit = false -- keeps track of whether init things like handlers need to run
 Archipelago.waitingForSync = false -- randomizer calls APSync when "waiting for sync"; i.e., when you die
@@ -123,6 +124,9 @@ function Archipelago.SlotDataHandler(slot_data)
 
     if slot_data.death_link ~= nil then
         Archipelago.death_link = slot_data.death_link
+    end
+    if slot_data.enemy_behavior ~= nil then
+        Archipelago.enemy_behavior = slot_data.enemy_behavior
     end
 
     Lookups.Load(slot_data.character, slot_data.scenario, string.lower(slot_data.difficulty))
