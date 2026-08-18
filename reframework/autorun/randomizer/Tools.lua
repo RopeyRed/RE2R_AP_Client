@@ -58,7 +58,7 @@ function Tools.ShowGUI()
 
     imgui.text_colored(" DeathLink: ", -10825765)
     imgui.same_line()
-    imgui.text_colored("                         " .. deathlink_text, deathlink_color)
+    imgui.text_colored("                             " .. deathlink_text, deathlink_color)
 
     if Archipelago.weapon_rando ~= nil then
         imgui.text_colored(" Weapon Randomizer: ", -10825765)
@@ -84,6 +84,14 @@ function Tools.ShowGUI()
                 end
             end
         end
+    end
+
+    imgui.new_line()
+
+    if Archipelago.killsanity ~= nil then
+        imgui.text_colored(" Killsanity: ", -10825765)
+        imgui.same_line()
+        imgui.text("                              " .. Archipelago.killsanity)
     end
 
     imgui.new_line()

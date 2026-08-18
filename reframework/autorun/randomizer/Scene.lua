@@ -5,6 +5,11 @@ Scene.mainFlowManager = nil
 Scene.interactManager = nil
 Scene.saveDataManager = nil
 Scene.recordManager = nil
+Scene.itemManager = nil
+
+--- A note for a person who has more time in the future
+-- 60_LevelMaster -> CutSceneManager
+--
 
 function Scene.getSceneObject()
     if Scene.sceneObject ~= nil then
@@ -18,6 +23,10 @@ end
 
 function Scene.getGameMaster()
     return Scene.getMasterObject("30_GameMaster")
+end
+
+function Scene.getInventoryMaster()
+    return Scene.getMasterObject("50_InventoryMaster")
 end
 
 function Scene.getGimmickMaster()
@@ -85,6 +94,18 @@ function Scene.getRecordManager()
     Scene.recordManager = gameMaster:call("getComponent(System.Type)", sdk.typeof(sdk.game_namespace("gamemastering.RecordManager")))
 
     return Scene.recordManager
+end
+
+function Scene.getItemManager()
+    if Scene.itemManager ~= nil then
+        return Scene.itemManager
+    end
+
+    local inventoryMaster = Scene.getInventoryMaster()
+
+    Scene.itemManager = inventoryMaster:call("getComponent(System.Type)", sdk.typeof(sdk.game_namespace("gamemastering.ItemManager")))
+
+    return Scene.itemManager
 end
 
 function Scene.getSurvivorType()

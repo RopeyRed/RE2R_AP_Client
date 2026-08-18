@@ -71,7 +71,7 @@ function Items.SetupInteractHook()
                 end
             else 
                 -- non-item things like typewriters here, so do typewriter interaction tracking
-                if string.match(item_name, "Typewriter") then
+                if string.match(item_name, "Typewriter") or item_name == "CheckPoint_NTyrant" then
                     if not Typewriters.unlocked_typewriters[item_name] then
                         Typewriters.AddUnlockedText("", item_name)
                     end
@@ -116,6 +116,13 @@ function Items.SetupInteractHook()
                 return
             end
 
+            -- Maintenance room ladder after G1 fight
+            if item_name == "sm49_005_TerrainLadder_SherryLadder_control" and item_folder_path == "RopewayContents/World/Location_RPD_B1/LocationLevel_RPD_B1/LocationFsm_RPD_B1/S02_0400/AREA_G1/SherryLadder" then
+                GUI.AddText("You can return to RPD by walking through the closed Secret Room door.")
+                Storage.finishedG1 = true
+            end
+
+            -- Inside the cable car that goes to Labs, on the Sewers side
             if item_name == "ScenarioNoAdovance_s05_0000" and item_folder_path == "RopewayContents/World/Location_WasteWater/LocationLevel_WasteWater/LocationFsm_WasteWater/common" then
                 GUI.AddText("Warning: Once you leave for Labs, returning to Sewers can cause a softlock.")
                 GUI.AddText("It is recommended that you complete all of the checks in Sewers prior to leaving.")
