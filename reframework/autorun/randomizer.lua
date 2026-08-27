@@ -35,6 +35,7 @@ StartingWeapon = require("randomizer/StartingWeapon")
 Storage = require("randomizer/Storage")
 Typewriters = require("randomizer/Typewriters")
 Tools = require("randomizer/Tools")
+AutoTab = require("randomizer/AutoTab")
 -- END globals
 
 
@@ -63,6 +64,7 @@ re.on_pre_application_entry("UpdateBehavior", function()
         StartingWeapon.Init()
         GUIInventory.Init()
         ItemDuplicates.Init()
+        AutoTab.Init()
 
         if Archipelago.waitingForSync then
             Archipelago.waitingForSync = false
