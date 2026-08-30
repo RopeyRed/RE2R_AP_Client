@@ -11,6 +11,14 @@ Scene.itemManager = nil
 -- 60_LevelMaster -> CutSceneManager
 --
 
+function Scene.isRTX()
+    local tdb = sdk.get_tdb_version()
+
+    if tdb > 69 then return true end
+
+    return false
+end
+
 function Scene.getSceneObject()
     if Scene.sceneObject ~= nil then
         return Scene.sceneObject
@@ -166,6 +174,10 @@ function Scene.getGUIInventory()
     return Scene.getSceneObject():findGameObject("GUI_NewInventory")
 end
 
+function Scene.getGUIMap()
+    return Scene.getSceneObject():findGameObject("GUI_Map")
+end
+
 function Scene.isTitleScreen()
     return Scene.getMainFlowManager():get_IsInTitle()
 end
@@ -192,6 +204,10 @@ end
 
 function Scene.isUsingInventory()
     return Scene.getGUIInventory():get_DrawSelf() -- is the Inventory GUI "drawn"?
+end
+
+function Scene.isUsingMap()
+    return Scene.getGUIMap():get_DrawSelf() -- is the Map GUI "drawn"?
 end
 
 function Scene.isCharacterLeon()

@@ -71,7 +71,7 @@ function Enemy.SetupEnemyDeadHook()
         end
 
         -- if killsanity isn't enabled in this rando, nothing to do here
-        if not Archipelago.killsanity then
+        if Archipelago.killsanity == nil or string.lower(Archipelago.killsanity) == "none" then
             return  
         end
 

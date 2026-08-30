@@ -645,6 +645,16 @@ function Archipelago.ReceiveItem(item_name, sender, is_randomized)
     if item_ref and item_number then
         local itemId, weaponId, weaponParts, bulletId, count = nil
 
+        -- first, add the item to the received items list so the player can re-receive at any time
+        local receivedItemsIncludesThisItem = false
+        for k, v in pairs(Storage.receivedItemNames) do
+            if v == item_name then receivedItemsIncludesThisItem = true end
+        end
+        
+        if not receivedItemsIncludesThisItem then
+            table.insert(Storage.receivedItemNames, item_name)            
+        end
+
         if item_ref.type == "Weapon" or item_ref.type == "Subweapon" then
             itemId = -1
             weaponId = item_number
