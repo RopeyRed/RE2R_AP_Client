@@ -5,6 +5,19 @@ Scene.mainFlowManager = nil
 Scene.interactManager = nil
 Scene.saveDataManager = nil
 Scene.recordManager = nil
+Scene.itemManager = nil
+
+--- A note for a person who has more time in the future
+-- 60_LevelMaster -> CutSceneManager
+--
+
+function Scene.isRTX()
+    local tdb = sdk.get_tdb_version()
+
+    if tdb > 69 then return true end
+
+    return false
+end
 
 function Scene.getSceneObject()
     if Scene.sceneObject ~= nil then
@@ -18,6 +31,10 @@ end
 
 function Scene.getGameMaster()
     return Scene.getMasterObject("30_GameMaster")
+end
+
+function Scene.getInventoryMaster()
+    return Scene.getMasterObject("50_InventoryMaster")
 end
 
 function Scene.getGimmickMaster()
@@ -87,6 +104,18 @@ function Scene.getRecordManager()
     return Scene.recordManager
 end
 
+function Scene.getItemManager()
+    if Scene.itemManager ~= nil then
+        return Scene.itemManager
+    end
+
+    local inventoryMaster = Scene.getInventoryMaster()
+
+    Scene.itemManager = inventoryMaster:call("getComponent(System.Type)", sdk.typeof(sdk.game_namespace("gamemastering.ItemManager")))
+
+    return Scene.itemManager
+end
+
 function Scene.getSurvivorType()
     local gameMaster = Scene.getGameMaster()
     local survivorManager = gameMaster:call("getComponent(System.Type)", sdk.typeof(sdk.game_namespace("SurvivorManager")))
@@ -145,6 +174,10 @@ function Scene.getGUIInventory()
     return Scene.getSceneObject():findGameObject("GUI_NewInventory")
 end
 
+function Scene.getGUIMap()
+    return Scene.getSceneObject():findGameObject("GUI_Map")
+end
+
 function Scene.isTitleScreen()
     return Scene.getMainFlowManager():get_IsInTitle()
 end
@@ -171,6 +204,10 @@ end
 
 function Scene.isUsingInventory()
     return Scene.getGUIInventory():get_DrawSelf() -- is the Inventory GUI "drawn"?
+end
+
+function Scene.isUsingMap()
+    return Scene.getGUIMap():get_DrawSelf() -- is the Map GUI "drawn"?
 end
 
 function Scene.isCharacterLeon()
